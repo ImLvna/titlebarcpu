@@ -1,9 +1,9 @@
 <html>
     <body>
         <script>
-            window.electronAPI.onUpdate((_,text) => {
+            window.electronAPI.onUpdate((_,text, id) => {
                 document.getElementById('text').innerHTML = text;
-                window.electronAPI.done()
+                window.electronAPI.done(id)
             })
         </script>
         <style>
